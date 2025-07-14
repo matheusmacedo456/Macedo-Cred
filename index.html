@@ -2,107 +2,96 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Macedo Cred</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-    }
-    header {
-      background: #fff;
-      padding: 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    header img {
-      height: 50px;
-    }
-    nav a {
-      margin-left: 20px;
-      text-decoration: none;
-      color: #003366;
-      font-weight: bold;
-    }
-    .hero {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      background: #f5f5f5;
-      padding: 40px 20px;
-    }
-    .hero h1 {
-      font-size: 2.5em;
-      color: #003366;
-    }
-    .sobre {
-      background: #0033cc;
-      color: white;
-      padding: 40px 20px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    .sobre p {
-      max-width: 800px;
-      font-size: 1.2em;
-      line-height: 1.6;
-      text-align: center;
-    }
-    .fotos-clientes {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      margin-top: 30px;
-      flex-wrap: wrap;
-    }
-    .fotos-clientes img {
-      width: 200px;
-      height: auto;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Macedo Cred</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+        header {
+            background-color: #003399;
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+        .hero {
+            text-align: center;
+            padding: 3rem 1rem;
+        }
+        .about {
+            background-color: #003399;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+        .about h2 {
+            margin-bottom: 1rem;
+        }
+        .clients {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+            padding: 2rem;
+        }
+        .clients img {
+            width: 280px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        footer {
+            background-color: #002266;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        .whatsapp-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25D366;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 18px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
 </head>
 <body>
 
-  <header>
-    <img src="logo.png" alt="Logo Macedo Cred" />
-    <nav>
-      <a href="#">Início</a>
-      <a href="#">Serviços</a>
-      <a href="#">Benefícios</a>
-      <a href="#">Depoimentos</a>
-      <a href="#">Contato</a>
-    </nav>
-  </header>
+    <header>
+        <img src="logo.png" alt="Logo Macedo Cred" style="max-width: 120px; margin-bottom: 1rem;">
+        <h1>Soluções Financeiras para Você</h1>
+        <p>Crédito consignado com atendimento humanizado e total transparência.</p>
+    </header>
 
-  <section class="hero">
-    <h1>Soluções Financeiras para Você</h1>
-    <p>Crédito consignado com atendimento humanizado e total transparência.</p>
-  </section>
+    <section class="about">
+        <h2>Sobre a Macedo Cred</h2>
+        <p>Na <strong>Macedo Cred</strong>, nossa missão é transformar crédito em tranquilidade. Atuamos com foco em empréstimos consignados,
+            sempre com atendimento humanizado, condições justas e total transparência.</p>
+        <p>Com uma equipe experiente e comprometida, somos especialistas em atender aposentados, pensionistas, servidores públicos
+            e trabalhadores com direito ao crédito consignado.</p>
+        <p>Nosso compromisso é fazer o seu dinheiro trabalhar a seu favor, com agilidade, segurança e respeito.</p>
+        <p><strong>Macedo Cred. Crédito fácil, atendimento de verdade.</strong></p>
+    </section>
 
-  <section class="sobre">
-    <h2>Sobre a Macedo Cred</h2>
-    <p>
-      Na <strong>Macedo Cred</strong>, nossa missão é transformar crédito em tranquilidade.
-      Atuamos com foco em empréstimos consignados, sempre com atendimento humanizado,
-      condições justas e total transparência. Com uma equipe experiente e comprometida,
-      somos especialistas em atender aposentados, pensionistas, servidores públicos e
-      trabalhadores com direito ao crédito consignado. Nosso compromisso é fazer o seu dinheiro
-      trabalhar a seu favor, com agilidade, segurança e respeito. <br><br>
-      <strong>Macedo Cred. Crédito fácil, atendimento de verdade.</strong>
-    </p>
-    <div class="fotos-clientes">
-      <img src="cliente1.jpg" alt="Cliente 1" />
-      <img src="cliente2.jpg" alt="Cliente 2" />
-      <img src="cliente3.jpg" alt="Cliente 3" />
-    </div>
-  </section>
+    <section class="clients">
+        <img src="cliente1.jpg" alt="Cliente 1">
+        <img src="cliente2.jpg" alt="Cliente 2">
+        <img src="cliente3.jpg" alt="Cliente 3">
+    </section>
 
+    <footer>
+        <p>&copy; 2025 Macedo Cred. Todos os direitos reservados.</p>
+    </footer>
+
+    <a class="whatsapp-button" href="https://wa.me/5511984773513" target="_blank">Fale conosco</a>
 </body>
 </html>
